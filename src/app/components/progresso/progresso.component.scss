@@ -1,0 +1,10 @@
+:host {
+    display: initial;
+    position: absolute;
+    top:  10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    /* Coloca na frente dos outros elementos */
+    z-index: 100;
+}

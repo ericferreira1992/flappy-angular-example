@@ -1,0 +1,23 @@
+<app-conjunto-canos
+    [alturaTela]="alturaTela"
+    [abertura]="abertura"
+    [x]="larguraTela">
+</app-conjunto-canos>
+
+<app-conjunto-canos *ngIf="alturaTela > 0"
+    [alturaTela]="alturaTela"
+    [abertura]="abertura"
+    [x]="larguraTela + espaco">
+</app-conjunto-canos>
+
+<app-conjunto-canos *ngIf="alturaTela > 0" 
+    [alturaTela]="alturaTela" 
+    [abertura]="abertura" 
+    [x]="larguraTela + espaco * 2">
+</app-conjunto-canos>
+
+<app-conjunto-canos *ngIf="alturaTela > 0" 
+    [alturaTela]="alturaTela" 
+    [abertura]="abertura" 
+    [x]="larguraTela + espaco * 3">
+</app-conjunto-canos>

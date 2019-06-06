@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 130px;
+
+    .meio {
+        margin: auto;
+        height: calc(100% - 30px);
+        width: 110px;
+        background: linear-gradient(90deg, #475c03, #9ad339);
+        border-left: 2px solid #000000;
+        border-right: 2px solid #000000;
+    }
+    
+    .borda {
+        margin: auto;
+        height: 30px;
+        width: 130px;
+        background: linear-gradient(90deg, #475c03, #9ad339);
+        border: 2px solid #000000;
+    }
+
+    &.baixo {
+        bottom: 0;
+    }
+
+    &.cima {
+        top: 0;
+    }
+}

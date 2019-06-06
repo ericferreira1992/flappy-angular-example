@@ -1,0 +1,22 @@
+<h1>Flappy Bird</h1>
+<div class="flappy" [style.width.px]="largura" [style.height.px]="altura">
+    
+    <app-progresso *ngIf="running"
+        [pontos]="pontos">
+    </app-progresso>
+
+    <app-obstaculos *ngIf="running"
+        [larguraTela]="largura"
+        [alturaTela]="altura"
+        [abertura]="abertura"
+        [espaco]="espaco"
+        [deslocamento]="deslocamento"
+        (notificarPonto)="notificarPonto()">
+    </app-obstaculos>
+
+    <app-bird *ngIf="running"
+        [alturaTela]="altura"
+        [larguraTela]="largura">
+    </app-bird>
+    
+</div>

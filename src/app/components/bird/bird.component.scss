@@ -1,0 +1,10 @@
+:host {
+    display: table;
+    position: absolute;
+    left: calc(50% - 30px); /* meio da tela 50% - meio da lagura (60/2) */
+
+    > img {
+        display: block;
+        width: 60px;
+    }
+}
