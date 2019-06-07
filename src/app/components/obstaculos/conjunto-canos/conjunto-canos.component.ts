@@ -17,11 +17,11 @@ export class ConjuntoCanosComponent implements OnInit {
 
     public set X(value: number) {
         if (this.el)
-            this.el.style.left = (value ? (value + 'px') : '');
+            this.el.style.left = (value ? (value + 'px') : '0');
     }
     public get X() {
         if (this.el)
-            return parseInt(this.el.style.left.replace('px', ''));
+            return this.el.style.left ? parseInt(this.el.style.left.replace('px', '')) : 0;
         else
             return 0;
     }

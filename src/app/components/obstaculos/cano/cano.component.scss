@@ -2,12 +2,12 @@
     display: block;
     position: absolute;
     height: 0;
-    width: 130px;
+    width: inherit;
 
     .meio {
         margin: auto;
         height: calc(100% - 30px);
-        width: 110px;
+        width: calc(100% - 20px);
         background: linear-gradient(90deg, #475c03, #9ad339);
         border-left: 2px solid #000000;
         border-right: 2px solid #000000;
@@ -16,7 +16,7 @@
     .borda {
         margin: auto;
         height: 30px;
-        width: 130px;
+        width: 100%;
         background: linear-gradient(90deg, #475c03, #9ad339);
         border: 2px solid #000000;
     }

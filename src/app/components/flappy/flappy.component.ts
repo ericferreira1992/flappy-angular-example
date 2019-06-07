@@ -20,7 +20,7 @@ export class FlappyComponent implements OnInit {
     public altura: number = 700;
 	public largura: number = 1200;
 
-    public abertura: number = 200;
+    public abertura: number = 150;
     public espaco: number = 400;
 	public deslocamento: number = 3;
 
@@ -32,6 +32,7 @@ export class FlappyComponent implements OnInit {
 	public get running() { return this.state !== STATE.NONE; }
 
 	constructor() {
+		this.definirMedidas();
 	}
 
 	ngOnInit() {
@@ -54,6 +55,17 @@ export class FlappyComponent implements OnInit {
 	private stop() {
 		clearInterval(this.temporizador);
 		this.state = STATE.STOPPED;
+	}
+
+	private definirMedidas() {
+		let windowHeight = window.innerHeight - 78;
+		let windowWidth = window.innerWidth;
+
+		if (this.altura >= windowHeight)
+			this.altura = windowHeight - 15;
+
+		if (this.largura >= windowWidth)
+			this.largura = windowWidth - 30;
 	}
 
 	public notificarPonto() {
